@@ -31,10 +31,10 @@ public class MainActivity extends FragmentActivity implements TabHost.OnTabChang
         mTabHost.setup();
 
         // TODO Put here your Tabs
-        MainActivity.AddTab(this, this.mTabHost, this.mTabHost.newTabSpec("Tab One").setIndicator("Tab One"));
-        MainActivity.AddTab(this, this.mTabHost, this.mTabHost.newTabSpec("Tab Two ").setIndicator("Tab Two"));
-        MainActivity.AddTab(this, this.mTabHost, this.mTabHost.newTabSpec("Tab Three").setIndicator("Tab Three"));
-        MainActivity.AddTab(this, this.mTabHost, this.mTabHost.newTabSpec("Tab Four").setIndicator("Tab Four"));
+        MainActivity.AddTab(this, this.mTabHost, this.mTabHost.newTabSpec("Tab 1").setIndicator("Tab 1"));
+        MainActivity.AddTab(this, this.mTabHost, this.mTabHost.newTabSpec("Tab 2 ").setIndicator("Tab 2"));
+        MainActivity.AddTab(this, this.mTabHost, this.mTabHost.newTabSpec("Tab 3").setIndicator("Tab 3"));
+        MainActivity.AddTab(this, this.mTabHost, this.mTabHost.newTabSpec("Tab 4").setIndicator("Tab 4"));
         mTabHost.setOnTabChangedListener(this);
     }
 
@@ -94,16 +94,6 @@ class SectionsPagerAdapter extends FragmentPagerAdapter {
 
     @Override
     public CharSequence getPageTitle(int position) {
-        switch (position) {
-            case 0:
-                return "TAB 1";
-            case 1:
-                return "TAB 2";
-            case 2:
-                return "TAB 3";
-            case 3:
-                return "TAB 4";
-        }
         return null;
     }
 
